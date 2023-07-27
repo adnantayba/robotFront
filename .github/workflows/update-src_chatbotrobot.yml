@@ -39,7 +39,9 @@ jobs:
           path: |
             . 
             !venv/
-
+          if-no-files-found: error
+          retention-days: 1
+        
   deploy:
     runs-on: ubuntu-latest
     needs: build
