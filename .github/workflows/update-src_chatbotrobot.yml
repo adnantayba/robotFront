@@ -39,9 +39,7 @@ jobs:
           path: |
             . 
             !venv/
-          if-no-files-found: error
-          retention-days: 1
-        
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -62,4 +60,4 @@ jobs:
         with:
           app-name: 'chatbotrobot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A860DEC0F1BA46F2B5F9EDCE79A0BC6F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_998080ABFC7F48F48841E186073C3144 }}
