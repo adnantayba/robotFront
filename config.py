@@ -29,5 +29,5 @@ class DefaultConfig:
     TRANSLATOR_REGION = 'global'
 
     # OpenAi key
-    OPENAI_KEY = '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'
+    OPENAI_KEY = ' '
 
